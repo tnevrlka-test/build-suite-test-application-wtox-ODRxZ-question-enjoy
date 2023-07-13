@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: test-annotations-nvby
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test-annotations-nvby
+    app.kubernetes.io/part-of: build-suite-test-application-wtox
+  name: test-annotations-nvby5gqj
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: test-annotations-nvby
+    weight: 100
+status: {}

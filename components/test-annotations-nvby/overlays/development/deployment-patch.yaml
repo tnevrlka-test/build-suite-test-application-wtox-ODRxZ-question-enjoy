@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-nvby
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-evey-tenant/build-suite-test-application-wtox/test-annotations-nvby@sha256:167f02ca6c4e9ffc842297dd3b4d21540055e307655303037ecabb64c7b2a9b2
+        name: my-nginx
+        resources: {}
+status: {}
