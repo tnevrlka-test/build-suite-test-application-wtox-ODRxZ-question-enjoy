@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-annotations-nvby
     spec:
       containers:
-      - image: hello-world:latest
+      - image: quay.io/tnevrlka-test/build-e2e-evey-tenant/build-suite-test-application-wtox/test-annotations-nvby@sha256:167f02ca6c4e9ffc842297dd3b4d21540055e307655303037ecabb64c7b2a9b2
         name: my-nginx
         ports:
         - containerPort: 8080
